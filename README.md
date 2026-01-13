@@ -1,16 +1,27 @@
-# React + Vite
+# Map Example với OpenMap.vn và StreetView.vn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng bản đồ sử dụng OpenMap.vn và tích hợp StreetView.vn để xem ảnh 360°.
 
-Currently, two official plugins are available:
+## Cài đặt
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cài đặt các dependencies:
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Chạy ứng dụng
 
-## Expanding the ESLint configuration
+Chạy development server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+Ứng dụng sẽ chạy tại: `http://localhost:3000`
+
+## Tính năng
+
+- Hiển thị bản đồ Việt Nam với style từ OpenMap.vn
+- Click vào bản đồ để xem StreetView 360° tại vị trí đó
+- Popup hiển thị ảnh 360° với các plugin: Compass, VirtualTour, Plan, Track
